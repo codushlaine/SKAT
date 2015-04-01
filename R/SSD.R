@@ -114,8 +114,8 @@ Check_ID_Length<-function(FileName){
 	}
 
 	# increase the limit ot 50
-	n1<-length(which(nchar(SSD.Info[,1]) > 200))
-	n2<-length(which(nchar(SSD.Info[,2]) > 200))
+	n1<-length(which(nchar(SSD.Info[,1]) > 150))
+	n2<-length(which(nchar(SSD.Info[,2]) > 150))
 
 	if(n1 > 0){
 		stop("Some SetIDs have more than 200 characters!") 
